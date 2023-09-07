@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: aqua;
+            .boxed-text {
+    border: 1px solid #000; 
+    padding: 8px; 
+    background-color: hotpink;
+}
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="boxed-text">Second page</h1></br>
+    <p><b>Welcome to the page lakshmi</p></br>
+    <input type="text" id="messageInput" placeholder="Type your message">
+    <button onclick="submitMessage()">Submit</button>
+    <p id="displayMessage"></p>
+
+    <script>
+        function submitMessage() {
+            const message = document.getElementById('messageInput').value;
+            document.getElementById('displayMessage').textContent = message;
+          
+        
+         window.location.href="3page.html";
+        }
+    </script>
+</body>
+</html>
